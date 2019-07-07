@@ -87,11 +87,16 @@ main{padding-bottom:56px;}
     line-height: 1;
     border-radius: .3rem;
 }
+.small-headers{padding-bottom:5px;border-bottom:1px solid #eee;}
+#launcher-releases{display:none;}
+#server-releases, #launcher-releases{position:absolute;background:#fff;transition: all 0.6s;}
+#tabChange {cursor:pointer;}
+#tabChange:hover{border-bottom:1px solid #ccc}
 .last-release {color:#0a0}
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{margin:0;}
 [role="download"] p{margin:0;padding:0 0 0 25px;}
-[role="download"] .row p{font-size:10px;}
-[role="download"] .row div:first-child p{font-size:12px;padding:0 0 0 40px;}
+[role="download"] #launcher-releases p,[role="download"] #server-releases p{font-size:10px;}
+[role="download"] #launcher-releases div:first-child p,[role="download"] #server-releases div:first-child p{font-size:12px;padding:0 0 0 40px;}
 
 /* content handling */
 .col-md-12{padding:5px 0;border-bottom:1px solid #ccc}
