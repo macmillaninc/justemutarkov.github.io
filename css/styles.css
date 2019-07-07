@@ -2,7 +2,7 @@
 @font-face {
 	font-family: 'Bender-Light';
 	src: url('./fonts/Bender-Light.eot');
-	src: local('☺'), url('./fonts/Bender-Light.woff') format('woff'), url('./fonts/Bender-Light.ttf') format('truetype'), url('./fonts/Bender-Light.svg') format('svg');
+	src: local('☺'), url('../fonts/Bender-Light.woff') format('woff'), url('../fonts/Bender-Light.ttf') format('truetype'), url('../fonts/Bender-Light.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
