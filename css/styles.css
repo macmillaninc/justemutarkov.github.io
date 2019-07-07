@@ -9,7 +9,7 @@
 /* main */
 .logo{}
 .logo:hover{-webkit-filter: invert(20%);filter: invert(20%);}
-
+.navbar{padding:0 0 0 15px}
 /* jumbotron */
 body {
 	text-shadow: 2px 2px #000;
