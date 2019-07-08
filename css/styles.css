@@ -30,6 +30,18 @@ body {
 .jumbotron{
 	background-image: url(../img/bg-index.jpg);
 }
+.jumbotron-downloads{
+	background-image: url(../img/bg-downloads.jpg);
+}
+.jumbotron-info{
+	background-image: url(../img/bg-info.jpg);
+}
+.jumbotron-tutorial{
+	background-image: url(../img/bg-tutorial.jpg);
+}
+.jumbotron-changelog{
+	background-image: url(../img/bg-changelog.jpg);
+}
 .jumbotron, .jumbotron-downloads{
 	border-radius:0;
 }
