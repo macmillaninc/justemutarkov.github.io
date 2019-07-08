@@ -92,7 +92,7 @@ main{padding-bottom:56px;}
 }
 .small-headers{padding-bottom:5px;border-bottom:1px solid #eee;}
 #launcher-releases{display:none;}
-#server-releases, #launcher-releases{/*position:absolute;*/background:#fff;transition: all 1s;}
+#server-releases, #launcher-releases{/*position:absolute;*/background:#fff;transition: all 1s;width:100%;}
 #tabChange {cursor:pointer;}
 #tabChange:hover{border-bottom:1px solid #ccc}
 .last-release {color:#0a0}
