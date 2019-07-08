@@ -27,6 +27,9 @@ body {
 .jumbotron *, .jumbotron-downloads *{
 	text-shadow: 1px 1px #000;
 }
+.jumbotron{
+	background-image: url(../img/bg-index.jpg);
+}
 .jumbotron, .jumbotron-downloads{
 	border-radius:0;
 }
