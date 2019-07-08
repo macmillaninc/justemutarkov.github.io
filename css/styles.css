@@ -92,7 +92,7 @@ main{padding-bottom:56px;}
 }
 .small-headers{padding-bottom:5px;border-bottom:1px solid #eee;}
 #launcher-releases{display:none;}
-#server-releases, #launcher-releases{position:absolute;background:#fff;transition: all 0.6s;}
+#server-releases, #launcher-releases{/*position:absolute;*/background:#fff;transition: all 1s;}
 #tabChange {cursor:pointer;}
 #tabChange:hover{border-bottom:1px solid #ccc}
 .last-release {color:#0a0}
@@ -107,6 +107,7 @@ main{padding-bottom:56px;}
 main{margin-bottom:60px;}
 /* stickly footer */
 .footer {
+	position: fixed;
 	bottom:0px;
 	width:100%;
 	background-color: #f5f5f5;
