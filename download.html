@@ -8,7 +8,7 @@
 		<meta name="author" content="JustEmuTarkov team">
 
 		<!-- tab -->
-		<title>Download</title>
+		<title>JET - Releases</title>
 
 		<!-- css -->
 		<link href="./css/bootstrap.min.css" rel="stylesheet">
@@ -18,13 +18,14 @@
 		<script type='text/javascript' src='./js/jquery.min.js'></script>
 		<script type='text/javascript' src='./js/bootstrap.min.js'></script>
 		<script src="./js/arrow.js"></script>
+		<script src="./js/main.js"></script>
 	</head>
 
 	<body class="d-flex flex-column h-100">
 		<!-- Fixed navbar -->
 		<header>
 			<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-				<a class="navbar-brand" href="index.html"><img class="logo" title="Just EmuTarkov" src="./img/logo.png" height="50"/></a>
+				<a class="navbar-brand" href="index.html"><img class="logo" title="Just EmuTarkov" src="./img/logo.png" height="50"/></a><a href="download.html" class="navLink">Releases</a><a href="changelog.html" class="navLink">Changelog</a><a href="tutorial.html" class="navLink">Tutorial</a><a href="info.html" class="navLink">Info</a>
 			</nav>
 		</header>
 
@@ -41,10 +42,10 @@
 			<!-- content -->
 			<div class="container">
 				<!-- releases -->
-				<div class="row head-navbar"><a id="tabChange" onclick="changeTab('server-releases');" data-id="server-releases">Server</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a id="tabChange" onclick="changeTab('launcher-releases');" data-id="launcher-releases">Launcher</a></div>
+				<div class="row head-navbar"><a id="tabChange" onclick="changeTab('server-releases');" class="server-releases active">Server</a><a id="tabChange" onclick="changeTab('launcher-releases');" class="launcher-releases">Launcher</a></div>
 				<div class="row">
 					<!-- server releases -->
-					<div id="server-releases">
+					<div class="tab" id="server-releases">
 						<!-- header -->
 						<div class="col-md-12 small-headers">
 							<h3> Server </h3>
@@ -57,7 +58,7 @@
 									<div class="btn-dwn0 btn-primary-dwn" role="button">Download &raquo;</div>
 								</a>
 							</h4>
-							<p>Date: 07.07.2019</p>
+							<p>Date: 01.07.2019</p>
 						</div>
 
 						<!-- 0.6.2 -->
@@ -67,7 +68,8 @@
 									<div class="btn-dwn0 btn-primary-dwn" role="button">Download &raquo;</div>
 								</a>
 							</h6>
-							<p>Date: 07.07.2019</p>
+							<p>Date: 27.06.2019</p>
+							<i>Note: private release</i>
 						</div>
 
 						<!-- 0.6.1 -->
@@ -77,7 +79,8 @@
 									<div class="btn-dwn0 btn-primary-dwn" role="button">Download &raquo;</div>
 								</a>
 							</h6>
-							<p>Date: 07.07.2019</p>
+							<p>Date: 26.06.2019</p>
+							<i>Note: private release</i>
 						</div>
 
 						<!-- 0.6.0 -->
@@ -87,7 +90,8 @@
 									<div class="btn-dwn0 btn-primary-dwn" role="button">Download &raquo;</div>
 								</a>
 							</h6>
-							<p>Date: 07.07.2019</p>
+							<p>Date: 26.06.2019</p>
+							<i>Note: private release</i>
 						</div>
 
 						<!-- 0.5.0 -->
@@ -97,7 +101,8 @@
 									<div class="btn-dwn0 btn-primary-dwn" role="button">Download &raquo;</div>
 								</a>
 							</h6>
-							<p>Date: 07.07.2019</p>
+							<p>Date: 24.06.2019</p>
+							<i>Note: private release</i>
 						</div>
 
 						<!-- 0.4.1 -->
@@ -107,7 +112,7 @@
 									<div class="btn-dwn0 btn-primary-dwn" role="button">Download &raquo;</div>
 								</a>
 							</h6>
-							<p>Date: 07.07.2019</p>
+							<p>Date: --- (unknown)</p>
 						</div>
 
 						<!-- 0.4.0 -->
@@ -117,7 +122,7 @@
 									<div class="btn-dwn0 btn-primary-dwn" role="button">Download &raquo;</div>
 								</a>
 							</h6>
-							<p>Date: 07.07.2019</p>
+							<p>Date: --- (unknown)</p>
 						</div>
 
 						<!-- 0.3.0 -->
@@ -127,7 +132,7 @@
 									<div class="btn-dwn0 btn-primary-dwn" role="button">Download &raquo;</div>
 								</a>
 							</h6>
-							<p>Date: 07.07.2019</p>
+							<p>Date: --- (unknown)</p>
 						</div>
 
 						<!-- 0.2.0 -->
@@ -137,7 +142,7 @@
 									<div class="btn-dwn0 btn-primary-dwn" role="button">Download &raquo;</div>
 								</a>
 							</h6>
-							<p>Date: 07.07.2019</p>
+							<p>Date: --- (unknown)</p>
 						</div>
 
 						<!-- 0.1.0 -->
@@ -147,12 +152,12 @@
 									<div class="btn-dwn0 btn-primary-dwn" role="button">Download &raquo;</div>
 								</a>
 							</h6>
-							<p>Date: 07.07.2019</p>
+							<p>Date: 26.02.2019 (project starts)</p>
 						</div>
 					</div>
 
 					<!-- launcher releases -->
-					<div id="launcher-releases">
+					<div class="tab" id="launcher-releases">
 						<!-- header -->
 						<div class="col-md-12 small-headers">
 							<h3> Launcher </h3>
@@ -181,23 +186,6 @@
 						-->
 					</div>
 				</div>
-
-				<!-- fade effect -->
-				<script type="text/javascript">
-					function changeTab(s) {
-						switch(s) {
-							case 'server-releases':
-								$("#launcher-releases").fadeOut(100);
-								break;
-							
-							case 'launcher-releases':
-								$("#server-releases").fadeOut(100);
-								break;
-						}
-
-						$("#" + s).fadeIn(100);
-					}
-				</script>
 			</div>
 		</main>
 
