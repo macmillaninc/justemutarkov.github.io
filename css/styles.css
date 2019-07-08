@@ -38,7 +38,7 @@ body {min-height: 100vh;position: relative;margin: 0;text-shadow: 2px 2px #000;f
 #server-releases, #launcher-releases{/*position:absolute;*/background:#fff;transition: all 1s;width:100%;}
 #tabChange {cursor:pointer;background:#eee;padding:5px 10px;border-radius:10px 5px;margin-right:10px;margin-bottom:11px;}
 #tabChange:hover{border-bottom:1px solid #777;margin-bottom:10px;}
-#tabChange.active{background:#ddd;border-bottom:1px solid #777;margin-bottom:0px;}
+#tabChange.active{background:#ddd;border-bottom:1px solid #777;margin-bottom:10px;}
 .last-release {color:#0a0}
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{margin:0;}
 [role="download"] p{margin:0;padding:0 0 0 25px;}
