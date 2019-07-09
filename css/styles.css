@@ -49,6 +49,6 @@ body {min-height: 100vh;position: relative;margin: 0;text-shadow: 2px 2px #000;f
 .col-md-12{padding:5px 0;border-bottom:1px solid #ccc}
 [role="main"] h2 {border-bottom:1px solid #eee;}
 main{margin-bottom:60px;}
-/*main{padding-bottom:56px;} we not need it now i think ;)*/
+/*main{padding-bottom:60px;} we not need it now i think ;)*/
 /* stickly footer */
 .footer {position:fixed;bottom:0px;width:100%;background-color:#f5f5f5;z-index:9999;}
