@@ -11,6 +11,7 @@ body {min-height: 100vh;position: relative;margin: 0;text-shadow: 2px 2px #000;f
 .navbar a:hover.navLink{color:#aaa;text-decoration:none;}
 .container h3.display-3,.container h3.display-3-dwn{background:rgba(0,0,0,0.3);padding:5px 10px;width:15rem;border-radius:5px 15px 5px 5px;}
 [role="main"] .container .col-md-4 p{text-align: justify;}
+.inline-block{display:inline-block;}
 /* jumbotron */
 .jumbotron *, .jumbotron-downloads *{text-shadow: 1px 1px #000;}
 /* Header Images */
