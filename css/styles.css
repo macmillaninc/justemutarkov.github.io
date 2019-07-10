@@ -224,8 +224,6 @@ h6 {
 main {
   margin-bottom: 60px;
 }
-/*main{padding-bottom:56px;} we not need it now i think ;)*/
-/* stickly footer */
 .footer {
   position: fixed;
   bottom: 0px;
