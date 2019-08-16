@@ -156,7 +156,8 @@ body {
 }
 #launcher-releases,
 #lau,
-#tab2 {
+#tab2, 
+#other-files {
   display: none;
 }
 #server-releases,
