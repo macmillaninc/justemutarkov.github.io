@@ -18,6 +18,28 @@ body {
   font-family: "Bender-Light";
   padding-top: 3.5rem;
   overflow-y: visible;
+  background: #000;
+  color:#fff;
+}
+header{
+	position: relative;z-index: 9999;
+}
+.gradientHeader{
+	background: linear-gradient(transparent, #000);
+	height: 15px;
+	bottom: 47px;
+	width: 100%;
+	z-index: 2000;
+	position: relative;
+}
+.gradientNav{
+	background: linear-gradient(#343a40, transparent);
+	height: 15px;
+	top: 60px;
+	left:0;
+	width: 100%;
+	z-index: 2000;
+	position: fixed;
 }
 .logo {
 }
@@ -58,6 +80,11 @@ body {
 .jumbotron *,
 .jumbotron-downloads * {
   text-shadow: 1px 1px #000;
+}
+.display-3 {
+    font-size: 4vw;
+    font-weight: 300;
+    line-height: 1.2;
 }
 /* Header Images */
 .jumbotron {
@@ -127,16 +154,16 @@ body {
   font-size: 2rem;
 }
 .btn-dwn0.btn-primary-dwn,
-.btn-dwn1.btn-primary-dwn {
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+.btn-dwn1.btn-primary-dwn, .btn-primary {
+  color: #999;
+  background-color: #400;
+  border-color: #999;
 }
 .btn-dwn0.btn-primary-dwn:hover,
-.btn-dwn1.btn-primary-dwn:hover {
-  color: #eee;
-  background-color: #0069d9;
-  border-color: #0062cc;
+.btn-dwn1.btn-primary-dwn:hover, .btn-primary:hover {
+  color: #fff;
+  background-color: #800;
+  border-color: #aaa;
 }
 .btn-dwn0.btn-primary-dwn {
   padding: 0.4rem 1.2rem;
@@ -154,39 +181,7 @@ body {
   padding-bottom: 5px;
   border-bottom: 1px solid #eee;
 }
-#launcher-releases,
-#lau,
-#tab2, 
-#other-files {
-  display: none;
-}
-#server-releases,
-#launcher-releases {
-  /*position:absolute;*/
-  background: #fff;
-  transition: all 1s;
-  width: 100%;
-}
-#tabChange {
-  cursor: pointer;
-  background: #eee;
-  padding: 5px 10px;
-  border-radius: 10px 5px;
-  margin-right: 10px;
-  margin-bottom: 11px;
-}
-#tabChange:hover {
-  border-bottom: 1px solid #777;
-  margin-bottom: 10px;
-}
-#tabChange.active {
-  background: #ddd;
-  border-bottom: 1px solid #777;
-  margin-bottom: 10px;
-}
-.last-release {
-  color: #0a0;
-}
+
 .h1,
 .h2,
 .h3,
@@ -205,19 +200,6 @@ h6 {
   margin: 0;
   padding: 0 0 0 25px;
 }
-[role="download"] #launcher-releases p,
-[role="download"] #server-releases p {
-  font-size: 12px;
-}
-[role="download"] #launcher-releases div:nth-child(2) p,
-[role="download"] #server-releases div:nth-child(2) p {
-  font-size: 14px;
-  padding: 0 0 0 40px;
-}
-/* Informations */
-a.info img{opacity:1;filter:alpha(opacity=100);}
-a.info:hover img{opacity:0.5;filter:alpha(opacity=50);}
-
 
 /* content handling */
 .col-md-12 {
@@ -234,6 +216,7 @@ main {
   position: fixed;
   bottom: 0px;
   width: 100%;
-  background-color: #f5f5f5;
+  border-top:1px solid #400;
+  background-color: #000;
   z-index: 9999;
 }
